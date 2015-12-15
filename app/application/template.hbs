@@ -1,35 +1,35 @@
 {{#paper-nav-container}}
-{{#paper-sidenav class="md-sidenav-left md-whiteframe-z2" locked-open="gt-sm"}}
-  {{#paper-toolbar}}
+  {{#paper-sidenav class="md-sidenav-left md-whiteframe-z2" locked-open="gt-sm"}}
+    {{#paper-toolbar}}
       <div class="md-toolbar-tools">
-      <div class="logo">
-      <img src="ember-logo-white-955db9d87b940bf54a17bd1fa78d0713.png" height="30"/>  <strong>Paper</strong>
+        <div class="logo"><strong>Supa-Bloggie</strong></div>
       </div>
-      </div>
-  {{/paper-toolbar}}
-{{#paper-content}}
-  {{#paper-list}}
-  {{#paper-item action="transitionTo" param="index"}}Introduction{{/paper-item}}
-  {{#paper-item action="transitionTo" param="index"}}Another link{{/paper-item}}
-{{/paper-list}}
-{{/paper-content}}
-{{/paper-sidenav}}
+    {{/paper-toolbar}}
 
-    <div layout="column" tabindex="-1" role="main" flex>
-{{#paper-toolbar}}
+    {{#paper-content}}
+      {{#paper-list}}
+
+        {{#paper-item action="transitionTo" param="index"}}Dashboard{{/paper-item}}
+        {{#paper-item action="transitionTo" param="about" target='about'}}About{{/paper-item}}
+
+      {{/paper-list}}
+    {{/paper-content}}
+  {{/paper-sidenav}}
+
+  <div layout="column" tabindex="-1" role="main" flex>
+  {{#paper-toolbar}}
     <div class="md-toolbar-tools">
-{{#paper-sidenav-toggle as |toggle|}}
-{{#paper-button target=toggle action="toggleMenu" icon-button=true}}{{paper-icon icon="menu"}}{{/paper-button}}
-{{/paper-sidenav-toggle}}
+    {{#paper-sidenav-toggle as |toggle|}}
+      {{#paper-button target=toggle action="toggleMenu" icon-button=true}}{{paper-icon icon="menu"}}
+      {{/paper-button}}
+    {{/paper-sidenav-toggle}}
     <span class="md-breadcrumb-page">Title</span>
     </div>
-{{/paper-toolbar}}
-{{#paper-content class="md-padding"}}
-    <p>My content</p>
-{{/paper-content}}
+  {{/paper-toolbar}}
+  {{#paper-content class="md-padding"}}
+
+    {{outlet}}
+
+  {{/paper-content}}
   </div>
 {{/paper-nav-container}}
-
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
