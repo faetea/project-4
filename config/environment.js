@@ -43,5 +43,14 @@ module.exports = function(environment) {
 
   }
 
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self'",
+    'font-src': "'self' fonts.gstatic.com",
+    'connect-src': "'self' localhost:3000",
+    'img-src': "'self' data:",
+    'media-src': "'self'"
+  };
+
   return ENV;
 };
