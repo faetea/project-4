@@ -1,18 +1,6 @@
 <h4> Create a New Blog </h4>
 
-Title: {{paper-input label="Blog Name" valueBinding="newBlog.title"}}
-username:
-{{#paper-select on-open=onUserLoad item-label-callback=userLabelCallback placeholder="Assign to a user" model=selectedUser as |items|}}
-  {{#each items as |user|}}
-    {{#paper-option value=user}}
-      {{user.name}}
-    {{/paper-option}}
-  {{/each}}
-{{/paper-select}}
-description: {{paper-input textarea=true label="Description" valueBinding="newBlog.description"}}
-category: {{paper-input label="Category" valueBinding="newBlog.category"}}
-hidden: {{#paper-checkbox checked=value2}}Make Private? {{#if value2}}yes{{else}}no{{/if}}{{/paper-checkbox}}
+{{paper-input label="Blog Title" valueBinding="newBlog.title"}}
+{{paper-input textarea=true label="Description" valueBinding="newBlog.description"}}
 
-{{paper-button raised=true primary=true action="createBlog" target=component label="Button with bubble"}}
-this needs to be a submit button
-{{yield}}
+{{paper-button raised=true primary=true action="createBlog" target=component label="Create"}}
