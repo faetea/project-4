@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function () {
-    Ember.$.getJSON('http://localhost:3000/fake').then(function (data) {
-      console.log(data);
-    });
+    return Ember.$.getJSON('http://localhost:3000/blogs');
+    //.then(function (data) {console.log(data);});
+    // this.store.findAll('blog');
   },
 
   actions: {
@@ -26,7 +26,6 @@ export default Ember.Route.extend({
         blogRecord.destroyRecord();
         console.log('blog record destroyed');
       });
-    },
-
+    }
   }
 });
