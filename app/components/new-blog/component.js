@@ -5,9 +5,18 @@ export default Ember.Component.extend({
     title: null,
     description: null,
   },
+
   actions: {
-    createBlog: function(){
-      this.sendAction('routeCreateBlog', this.get('newBlog'));
-    }
-  }
+    createBlog: function (){
+      Ember.$.ajax({
+        url: "http://localhost:3000/blogs",
+        method: "post",
+        contentType: "application/json",
+        xhrFields: { withCredentials: true },
+        data: JSON.stringify(this.get('newBlog'))
+        // success: function (data) { console.log("login succeeded"); }
+      });
+    }, // end createBlog
+
+  } // end actions
 });
