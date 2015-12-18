@@ -1,0 +1,15 @@
+{{#paper-card class="new"}}
+  {{#paper-card-content class="newContent"}}
+    <h4> Create a New Post </h4>
+    {{paper-input label="Post Title" valueBinding="newPost.title"}}
+    {{paper-input textarea=true label="Post Content" valueBinding="newPost.content"}}
+    <div class="md-actions" layout="row" layout-align="end center">
+      {{paper-button raised=true primary=true action="createPost" target=component label="Publish"}}
+    </div>
+  {{/paper-card-content}}
+{{/paper-card}}
+
+{{!-- <h4> Create a New Post </h4>
+{{paper-input label="Post Title" valueBinding="newPost.title"}}
+{{paper-input textarea=true label="Post Text" valueBinding="newPost.text"}}
+{{paper-button raised=true primary=true action="createPost" target=component label="Publish"}} --}}

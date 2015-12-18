@@ -6,6 +6,9 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+      'connect-src' : "'self' http://localhost:4200"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -42,6 +45,15 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
+
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self'",
+    'font-src': "'self' fonts.gstatic.com",
+    'connect-src': "'self' localhost:3000",
+    'img-src': "'self' data:",
+    'media-src': "'self'"
+  };
 
   return ENV;
 };

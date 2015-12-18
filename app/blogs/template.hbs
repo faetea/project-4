@@ -1,0 +1,27 @@
+{{#paper-card class=""}}
+  {{#paper-card-content class=""}}
+    {{#paper-list}}
+      {{#each model as |blog|}}
+        {{#paper-item class="md-3-line" param=blog._id action="goToBlog"}}
+        {{!-- {{#paper-item action="transitionTo" param="posts" target="posts"}} --}}
+            {{paper-icon icon="pageview"}}
+            <div class="md-list-item-text">
+              <h3>{{blog.title}}</h3>
+              <h4>{{blog.author}}</h4>
+              <p>{{blog.description}}</p>
+            </div>
+        {{/paper-item}}
+        {{paper-divider}} {{! OR {{paper-divider inset=true}}
+      {{/each}}
+    {{/paper-list}}
+  {{/paper-card-content}}
+{{/paper-card}}
+
+{{!-- {{#each model as |blog|}}
+  {{all-blogs blog=blog}}
+{{else}}
+  You haven't created any blogs yet
+{{/each}}
+{{all-blogs}} --}}
+
+{{new-blog}}

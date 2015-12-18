@@ -6,6 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('dashboard');
+  this.route('blogs');
+  this.route('posts', {path: '/posts/:id'});
+  this.route('about');
+  this.route('public');
 });
 
 export default Router;
