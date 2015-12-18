@@ -1,7 +1,17 @@
-{{paper-input label="Username" type="text" valueBinding="credentials.username"}}
-{{paper-input label="Password" type="password" valueBinding="credentials.password"}}
+{{#paper-card class="new"}}
+  {{#paper-card-content class="newContent"}}
+    <h4> Please Sign In </h4>
+    {{paper-input label="Username" type="text" valueBinding="credentials.username"}}
+    {{paper-input label="Password" type="password" valueBinding="credentials.password"}}
+    <div class="md-actions" layout="row" layout-align="end center">
+      {{paper-button raised=true primary=true action="login" target=component label="Login"}}
+    </div>
+  {{/paper-card-content}}
+{{/paper-card}}
 
-{{paper-button raised=true primary=true action="login" target=component label="Login"}}
+{{!-- {{paper-input label="Username" type="text" valueBinding="credentials.username"}}
+{{paper-input label="Password" type="password" valueBinding="credentials.password"}}
+{{paper-button raised=true primary=true action="login" target=component label="Login"}} --}}
 
 {{!-- <div id="logAlert">
   <strong>Log in unsuccessful</strong>

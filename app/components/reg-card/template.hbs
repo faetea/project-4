@@ -1,4 +1,10 @@
-{{paper-input label="Username" type="text" valueBinding="credentials.username"}}
-{{paper-input label="Password" type="password" valueBinding="credentials.password"}}
-
-{{paper-button raised=true primary=true action="register" target=component label="Register"}}
+{{#paper-card class="new"}}
+  {{#paper-card-content class="newContent"}}
+    <h4> Please Register </h4>
+    {{paper-input label="Username" type="text" valueBinding="credentials.username"}}
+    {{paper-input label="Password" type="password" valueBinding="credentials.password"}}
+    <div class="md-actions" layout="row" layout-align="end center">
+      {{paper-button raised=true primary=true action="register" target=component label="Register"}}
+    </div>
+  {{/paper-card-content}}
+{{/paper-card}}

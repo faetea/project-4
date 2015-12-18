@@ -15,7 +15,6 @@ export default Ember.Component.extend({
         contentType: "application/json",
         xhrFields: { withCredentials: true },
         data: JSON.stringify(this.get('credentials'))
-        // success: function (data) { console.log("login succeeded"); }
       });
     },
 
