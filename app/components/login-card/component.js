@@ -21,3 +21,15 @@ export default Ember.Component.extend({
 
   } // end actions
 });
+
+
+// $('#current-user').html('Logging in...');
+// var loginCb = function(err) {
+//   if (err){
+//     console.error(err);
+//     $('#logAlert').show();
+//     $('#current-user').html('Login/Register');
+//     return;
+//   }
+//     $('#current-user').html('Welcome, ' +  + '!');
+// };

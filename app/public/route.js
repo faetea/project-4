@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function () {
-    return this.store.findAll('blog');
-  },
+    return this.store.findAll('blogs');
+  }
   // model: function () {
   //   return Ember.$.ajax({
   //     url: "http://localhost:3000/users/blogs",
@@ -13,10 +13,4 @@ export default Ember.Route.extend({
   //   });
   // }
 
-  actions: {
-    goToBlog: function (blogId) {
-      console.log(blogId);
-      this.transitionTo('posts', blogId);
-    }
-  }
 });

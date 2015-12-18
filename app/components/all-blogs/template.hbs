@@ -1,25 +1,5 @@
-{{!-- {{#paper-content class="md-whiteframe-z1 list-demo"}}
-  {{#paper-list}}
-    {{#each listData as |item|}}
-      {{#paper-item}}
-        <img src={{item.face}} alt={{item.who}} class="md-avatar">
-        <div class="md-list-item-text">
-          <h3>{{item.what}}</h3>
-          <h4>{{item.who}}</h4>
-          <p>
-            {{item.notes}}
-          </p>
-        </div>
-      {{/paper-item}}
-      {{paper-divider}} {{! OR {{paper-divider inset=true}} }}
-    {{/each}}
-  {{/paper-list}}
-{{/paper-content}}
- --}}
-
-Title: {{blog.title}}
-Category: {{blog.category}}
-Description: {{blog.description}}
-Username: {{blog.username}}
-
-{{!-- {{yield}} --}}
+<div>
+<h3>{{blog.title}}</h3>
+<h4>{{blog.author}}</h4>
+<p>{{blog.description}}</p>
+</div>

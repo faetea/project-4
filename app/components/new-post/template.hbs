@@ -1,1 +1,6 @@
-{{yield}}
+<h4> Create a New Post </h4>
+
+{{paper-input label="Post Title" valueBinding="newPost.title"}}
+{{paper-input textarea=true label="Post Text" valueBinding="newPost.text"}}
+
+{{paper-button raised=true primary=true action="createPost" target=component label="Publish"}}
