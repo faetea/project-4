@@ -6,9 +6,6 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    contentSecurityPolicy: {
-      'connect-src' : "'self' http://localhost:4200"
-    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -19,6 +16,26 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    sassOptions: {
+      includePaths: ['bower_components/materialize/sass']
+    },
+    materializeDefaults: {
+      modalIsFooterFixed:  false,
+      buttonIconPosition:  'left',
+      loaderSize:          'big',
+      loaderMode:          'indeterminate',
+      modalContainerId:    'materialize-modal-root-element',
+      dropdownInDuration:  300,
+      dropdownOutDuration: 300
+    },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' http://localhost:3000",
+      'img-src': "'self' data:",
+      'media-src': "'self'"
     }
   };
 
@@ -45,15 +62,6 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
-
-  ENV.contentSecurityPolicy = {
-    'default-src': "'none'",
-    'script-src': "'self'",
-    'font-src': "'self' fonts.gstatic.com",
-    'connect-src': "'self' localhost:3000",
-    'img-src': "'self' data:",
-    'media-src': "'self'"
-  };
 
   return ENV;
 };
