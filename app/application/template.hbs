@@ -9,9 +9,11 @@
     {{#paper-content}}
       {{#paper-list}}
 
+        {{#paper-item action="transitionTo" param="dashboard" target="dashboard"}}Dashboard{{/paper-item}}
+        {{paper-divider}}
         {{#paper-item action="transitionTo" param="index"}}Login/Register{{/paper-item}}
+        {{paper-divider}}
         {{#paper-item action="transitionTo" param="blogs" target="blogs"}}All Blogs{{/paper-item}}
-{{!--         {{#paper-item action="transitionTo" param="posts" target="posts"}}My Posts{{/paper-item}} --}}
         {{paper-divider}}
         {{#paper-item action="transitionTo" param="about" target="about"}}About{{/paper-item}}
         {{paper-divider}}
