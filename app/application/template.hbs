@@ -9,9 +9,17 @@
     {{#paper-content}}
       {{#paper-list}}
 
-        {{#paper-item action="transitionTo" param="dashboard" target="dashboard"}}Dashboard{{/paper-item}}
-        {{paper-divider}}
+        {{#paper-item}}
+          {{#if isLoggedin}}
+            Welcome back, <b>{{username}}</b>!
+          {{else}}
+            Please log in.
+          {{/if}}
+        {{/paper-item}}
+
         {{#paper-item action="transitionTo" param="index"}}Login/Register{{/paper-item}}
+        {{paper-divider}}
+        {{#paper-item action="transitionTo" param="dashboard" target="dashboard"}}Dashboard{{/paper-item}}
         {{paper-divider}}
         {{#paper-item action="transitionTo" param="blogs" target="blogs"}}All Blogs{{/paper-item}}
         {{paper-divider}}
@@ -29,7 +37,7 @@
       {{#paper-button target=toggle action="toggleMenu" icon-button=true}}{{paper-icon icon="menu"}}
       {{/paper-button}}
     {{/paper-sidenav-toggle}}
-    <span class="md-breadcrumb-page">{{param}}</span>
+    <span class="md-breadcrumb-page">{{params}}</span>
     </div>
   {{/paper-toolbar}}
   {{#paper-content class="md-padding"}}

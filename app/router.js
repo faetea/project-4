@@ -7,15 +7,16 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('dashboard', {path: '/dash'});
-  this.route('blogs');
-  this.route('blog', {path: '/blog/:blog_id'});
+  this.route('about');
+
+  this.route('blogs'); // all users blogs
+  this.route('blog', {path: '/blog/:blog_id'}); // a single blog
 
   this.route('posts'
     //, {path: '/posts/:id'}
-    ); // load all of the blog posts for the app?
+    ); // load all of the posts for this blog?
   this.route('post', {path: '/post/:post_id'}); // a single post
 
-  this.route('about');
 });
 
 export default Router;
