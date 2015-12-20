@@ -2,7 +2,7 @@
   {{#paper-card-content class="newContent"}}
     <h4> Create a New Blog </h4>
     {{paper-input label="Blog Title" valueBinding="newBlog.title"}}
-    {{paper-input textarea=true label="Description" valueBinding="newBlog.description"}}
+    {{paper-input textarea=true label="Content" valueBinding="newBlog.content"}}
     <div class="md-actions" layout="row" layout-align="end center">
       {{paper-button raised=true primary=true action="createBlog" target=component label="Create"}}
     </div>
