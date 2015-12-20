@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   newBlog: {
     title: null,
-    description: null,
+    content: null,
   },
 
   actions: {

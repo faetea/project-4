@@ -4,6 +4,7 @@ export default Ember.Route.extend({
   model: function () {
     return this.store.findAll('blog');
   },
+
   // model: function () {
   //   return Ember.$.ajax({
   //     url: "http://localhost:3000/users/blogs",
@@ -14,9 +15,9 @@ export default Ember.Route.extend({
   // }
 
   actions: {
-    goToBlog: function (blogId) {
-      console.log(blogId);
-      this.transitionTo('posts', blogId);
+    goToBlog: function (blog_id) {
+      console.log(blog_id);
+      this.transitionTo('blog', blog_id);
     }
   }
 });
