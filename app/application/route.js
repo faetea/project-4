@@ -18,4 +18,3 @@ export default Ember.Route.extend({
 
   } // end actions
 }); // end Ember.Route
-

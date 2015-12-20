@@ -35,7 +35,8 @@ module.exports = function(environment) {
       'font-src': "'self' fonts.gstatic.com",
       'connect-src': "'self' http://localhost:3000",
       'img-src': "'self' data:",
-      'media-src': "'self'"
+      'media-src': "'self'",
+      'style-src': "'self' 'unsafe-inline'"
     }
   };
 
