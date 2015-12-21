@@ -1,5 +1,8 @@
 # Fourth-project
 
+* back-end repo: [github.com/faetea/blogBE](https://github.com/faetea/blogBE)
+* deployed front-end: [faetea.github.io/project-4](http://faetea.github.io/project-4)
+* deployed back-end: [desolate-headland-9492.herokuapp.com](https://desolate-headland-9492.herokuapp.com)
 
 ## Concept
 
@@ -9,6 +12,11 @@ When a visitor visits your site, they should see content.
 When a user logs in, they should see a dashboard that lets them create and edit new posts.
 Blog posts should have comments.
 
+![Sign-In Card](/blog1_signin.png?raw=true)
+
+![a Post by chefKelly](/blog2_post.png?raw=true)
+
+![New Post Card](/blog3_newPost.png?raw=true)
 
 ## User Stories
 
