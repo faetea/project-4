@@ -10,7 +10,8 @@ export default Ember.Component.extend({
     register: function (){
       // console.log(this.get('credentials'));
       Ember.$.ajax({
-        url: "http://localhost:3000/signup",
+        // url: "http://localhost:3000/signup",
+        url: "https://desolate-headland-9492.herokuapp.com/signup",
         method: "post",
         contentType: "application/json",
         xhrFields: { withCredentials: true },

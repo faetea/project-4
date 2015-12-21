@@ -33,7 +33,8 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self'",
       'font-src': "'self' fonts.gstatic.com",
-      'connect-src': "'self' http://localhost:3000",
+      // 'connect-src': "'self' http://localhost:3000",
+      'connect-src': "'self' https://desolate-headland-9492.herokuapp.com/",
       'img-src': "'self' data:",
       'media-src': "'self'",
       'style-src': "'self' 'unsafe-inline'"

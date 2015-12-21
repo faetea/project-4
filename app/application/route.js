@@ -18,7 +18,8 @@ export default Ember.Route.extend({
     logout: function (){
       // console.log(this.get('credentials'));
       Ember.$.ajax({
-        url: "http://localhost:3000/logout",
+        // url: "http://localhost:3000/logout",
+        url: 'https://desolate-headland-9492.herokuapp.com/logout',
         method: "post",
         contentType: "application/json",
         xhrFields: { withCredentials: true },

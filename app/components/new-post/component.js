@@ -9,7 +9,8 @@ export default Ember.Component.extend({
   actions: {
     createPost: function (blogId){
       Ember.$.ajax({
-        url: "http://localhost:3000/blogs/" + blogId + "/posts",
+        // url: "http://localhost:3000/blogs/" + blogId + "/posts",
+        url: "https://desolate-headland-9492.herokuapp.com/blogs/" + blogId + "/posts",
         method: "post",
         contentType: "application/json",
         xhrFields: { withCredentials: true },
