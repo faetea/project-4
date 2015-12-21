@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         xhrFields: { withCredentials: true },
         data: JSON.stringify(this.get('newPost'))
       });
-      location.reload();
+      // location.reload();
     }, // end createPost
 
   } // end actions

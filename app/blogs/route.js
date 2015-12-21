@@ -5,15 +5,6 @@ export default Ember.Route.extend({
     return this.store.findAll('blog');
   },
 
-  // model: function () {
-  //   return Ember.$.ajax({
-  //     url: "http://localhost:3000/users/blogs",
-  //     method: "get",
-  //     contentType: "application/json",
-  //     xhrFields: { withCredentials: true },
-  //   });
-  // }
-
   actions: {
     goToBlog: function (blog_id) {
       console.log(blog_id);

@@ -17,7 +17,7 @@ export default Ember.Component.extend({
         data: JSON.stringify(this.get('newBlog'))
         // success: function (data) { console.log("login succeeded"); }
       });
-      location.reload();
+      // location.reload();
     }, // end createBlog
 
   } // end actions
