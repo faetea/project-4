@@ -1,4 +1,4 @@
-# Fourth-project
+# Bloggie-GEN
 
 * back-end repo: [github.com/faetea/blogBE](https://github.com/faetea/blogBE)
 * deployed front-end: [faetea.github.io/project-4](http://faetea.github.io/project-4)
@@ -12,11 +12,23 @@ When a visitor visits your site, they should see content.
 When a user logs in, they should see a dashboard that lets them create and edit new posts.
 Blog posts should have comments.
 
-![Sign-In Card](/blog1_signin.png?raw=true)
+## Screenshots
+![Sign-In Card](/screenshots/blog01_signin.png?raw=true)
 
-![a Post by chefKelly](/blog2_post.png?raw=true)
+The Login/Register inputs are on the index.
 
-![New Post Card](/blog3_newPost.png?raw=true)
+![New Post Card](/screenshots/blog02_newPost.png?raw=true)
+
+After you browse all Posts you will see an option to Create a new Post, tho it will not let you Publish unless you have logged in.
+
+![Post by chefKelly](/screenshots/blog03_post.png?raw=true)
+
+When you click any Post in the list it will display that Post by itself.
+
+![Post being Edited](/screenshots/blog04_editPost.png?raw=true)
+
+When a Post is displayed by itself it will have an edit button.
+
 
 ## User Stories
 
